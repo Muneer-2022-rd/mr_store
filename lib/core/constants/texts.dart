@@ -121,13 +121,26 @@ class TTexts {
   static String products = "products".tr;
   static String product = "product".tr;
   // checkout
- static String checkoutCoupon = "coupon".tr;
- static String apply = "apply".tr;
- static String subtotal = "subtotal".tr;
- static String shippingFee = "shipping_fee".tr;
- static String tax = "tax".tr;
- static String total = "total".tr;
- static String method = "method".tr;
- static String change = "change".tr;
- static String shippingAddress = "shipping_address".tr;
+  static String checkoutCoupon = "coupon".tr;
+  static String apply = "apply".tr;
+  static String subtotal = "subtotal".tr;
+  static String shippingFee = "shipping_fee".tr;
+  static String tax = "tax".tr;
+  static String total = "total".tr;
+  static String method = "method_payment".tr;
+  static String change = "change".tr;
+  static String shippingAddress = "shipping_address".tr;
+  // reviews
+  static String reviewsTitle = "reviews_title".tr;
+  static String reviewsSubtitle = "reviews_subtitle".tr;
+  //address
+  static String address = "reviews_title".tr;
+  static String addNewAddress = "add_new_address".tr;
+  static String name = "name".tr;
+  static String country = "country".tr;
+  static String city = "city".tr;
+  static String state = "state".tr;
+  static String street = "street".tr;
+  static String postalCode = "postal_code".tr;
+  static String save = "save".tr;
 }

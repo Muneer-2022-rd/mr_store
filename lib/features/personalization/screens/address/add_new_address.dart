@@ -3,6 +3,7 @@ import 'package:mr_store/common/widgets/custom_text_form_field.dart';
 import 'package:mr_store/core/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:mr_store/core/constants/texts.dart';
 
 class AddNewAddress extends StatelessWidget {
   const AddNewAddress({super.key});
@@ -19,7 +20,7 @@ class AddNewAddress extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(
         title: Text(
-          'Add New Address',
+          TTexts.addNewAddress,
           style: Theme.of(context).textTheme.headlineMedium,
         ),
         showBackArrow: true,
@@ -33,19 +34,19 @@ class AddNewAddress extends StatelessWidget {
               children: [
                 CustomTextFormField(
                   controller: nameC,
-                  labelText: 'Name',
+                  labelText: TTexts.name,
                   prefixIcon: Iconsax.user,
                 ),
                 const SizedBox(height: TSizes.spaceBtwInputFields),
                 CustomTextFormField(
                   controller: phoneC,
-                  labelText: 'Phone',
+                  labelText: TTexts.userPhone,
                   prefixIcon: Iconsax.mobile,
                 ),
                 const SizedBox(height: TSizes.spaceBtwInputFields),
                 CustomTextFormField(
                   controller: countryC,
-                  labelText: 'Country',
+                  labelText: TTexts.country,
                   prefixIcon: Iconsax.global,
                 ),
                 const SizedBox(height: TSizes.spaceBtwInputFields),
@@ -54,7 +55,7 @@ class AddNewAddress extends StatelessWidget {
                     Expanded(
                       child: CustomTextFormField(
                         controller: cityC,
-                        labelText: 'City',
+                        labelText: TTexts.city,
                         prefixIcon: Iconsax.building,
                       ),
                     ),
@@ -62,7 +63,7 @@ class AddNewAddress extends StatelessWidget {
                     Expanded(
                       child: CustomTextFormField(
                         controller: stateC,
-                        labelText: 'State',
+                        labelText: TTexts.state,
                         prefixIcon: Iconsax.activity,
                       ),
                     ),
@@ -74,7 +75,7 @@ class AddNewAddress extends StatelessWidget {
                     Expanded(
                       child: CustomTextFormField(
                         controller: streetC,
-                        labelText: 'Street',
+                        labelText: TTexts.street,
                         prefixIcon: Iconsax.building_34,
                       ),
                     ),
@@ -82,14 +83,14 @@ class AddNewAddress extends StatelessWidget {
                     Expanded(
                       child: CustomTextFormField(
                         controller: postalCodeC,
-                        labelText: 'Postal Code',
+                        labelText: TTexts.postalCode,
                         prefixIcon: Iconsax.code,
                       ),
                     ),
                   ],
                 ),
                 const SizedBox(height: TSizes.spaceBtnSections),
-                ElevatedButton(onPressed: () {}, child: const Text('Save')),
+                ElevatedButton(onPressed: () {}, child: Text(TTexts.save)),
               ],
             ),
           ),

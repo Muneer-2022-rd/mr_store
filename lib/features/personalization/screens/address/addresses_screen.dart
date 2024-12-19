@@ -2,6 +2,7 @@ import 'package:mr_store/common/widgets/custom_app_bar.dart';
 import 'package:mr_store/core/constants/colors.dart';
 import 'package:mr_store/core/constants/routes.dart';
 import 'package:mr_store/core/constants/sizes.dart';
+import 'package:mr_store/core/constants/texts.dart';
 import 'package:mr_store/features/personalization/screens/address/widgets/single_address.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -27,7 +28,7 @@ class UserAddressScreen extends StatelessWidget {
       appBar: CustomAppBar(
         showBackArrow: true,
         title: Text(
-          "My Addresses",
+          TTexts.addresses,
           style: Theme.of(context).textTheme.headlineMedium,
         ),
       ),

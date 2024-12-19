@@ -120,7 +120,18 @@ class MyLocale implements Translations {
           "total": "Total",
           "method_payment": "Payment Methods",
           "change": "Change",
-          "shipping_address":"Shipping Address"
+          "shipping_address": "Shipping Address",
+          "reviews_title": "Reviews & Rating",
+          "reviews_subtitle":
+              "Our ratings and reviews are genuine and based on real customer experiences. We value your trust and ensure transparency in every review shared. Your feedback helps us improve and serve you better.",
+          "add_new_address": "Add New Address",
+          "name": "Name",
+          "country": "Country",
+          "city": "City",
+          "state": "State",
+          "street": "Street",
+          "postal_code": "Postal Code",
+          "save": "Save",
         },
         'ar': {
           'user_email': 'البريد الإلكتروني',
@@ -223,6 +234,7 @@ class MyLocale implements Translations {
           "notifications_subtitle": "تشغيل/إيقاف الإشعارات",
           "color_subtitle": "تغيير لون التطبيق",
           "cart": "السلة",
+          "order_proccessing": "معالجة الطلب",
           "order_proccessing_subtitle": "المنتج يتم تحضيره",
           "success_payment": "تم الدفع بشكل ناجح",
           "coupon": "هل لديك كوبون خصم ؟ ادخله هنا",
@@ -233,7 +245,18 @@ class MyLocale implements Translations {
           "total": "الكلي",
           "method_payment": "طرق الدفع",
           "change": "تغيير",
-          "shipping_address":"موقع الشحن"
+          "shipping_address": "موقع الشحن",
+          "reviews_title": "التقييمات والأراء",
+          "reviews_subtitle":
+              "تقييماتنا ومراجعاتنا حقيقية وتستند إلى تجارب العملاء الحقيقية. نحن نقدر ثقتك ونضمن الشفافية في كل مراجعة نشاركها. تساعدنا ملاحظاتك على التحسين وتقديم خدمة أفضل لك.",
+          "add_new_address": "اضافة موقع جديد",
+          "name": "الاسم",
+          "country": "البلد",
+          "city": "المدينة",
+          "state": "الولاية",
+          "street": "الشارع",
+          "postal_code": "الرمز الدولي",
+          "save": "حفظ",
         },
       };
 }
