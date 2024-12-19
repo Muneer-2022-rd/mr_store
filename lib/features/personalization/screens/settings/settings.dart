@@ -4,6 +4,7 @@ import 'package:mr_store/core/constants/colors.dart';
 import 'package:mr_store/core/constants/routes.dart';
 import 'package:mr_store/core/constants/sizes.dart';
 import 'package:mr_store/common/widgets/seaction_heading.dart';
+import 'package:mr_store/core/constants/texts.dart';
 import 'package:mr_store/core/helpers/helper_functions.dart';
 import 'package:mr_store/features/personalization/screens/settings/widgets/primary_left_header_container.dart';
 import 'package:mr_store/features/personalization/screens/settings/widgets/setting_menu_tile.dart';
@@ -24,7 +25,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
   bool? switchTurn = false;
   @override
   Widget build(BuildContext context) {
-    // final controller = ColorController.instance;
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -34,7 +34,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 children: [
                   CustomAppBar(
                     title: Text(
-                      'Account',
+                      TTexts.account,
                       style: Theme.of(context)
                           .textTheme
                           .headlineMedium!
@@ -50,41 +50,42 @@ class _SettingsScreenState extends State<SettingsScreen> {
               padding: const EdgeInsets.all(TSizes.defaultSpace),
               child: Column(
                 children: [
-                  const SeactionHeading(title: "Account Settings"),
+                  SeactionHeading(
+                      title: "${TTexts.settings} ${TTexts.account}"),
                   const SizedBox(height: TSizes.spaceBtnItems),
                   SettingMenuTile(
-                    title: "My Wishlist",
-                    subTitle: "save for later",
+                    title: TTexts.wishlist,
+                    subTitle: TTexts.wishlistSubtitle,
                     leadingIcon: Iconsax.heart,
                     onTap: () {
                       Get.toNamed(AppRoute.wishlist);
                     },
                   ),
                   SettingMenuTile(
-                      title: "My Orders",
-                      subTitle: "your orders is here",
+                      title: TTexts.orders,
+                      subTitle: TTexts.ordersSubtitle,
                       leadingIcon: Iconsax.box,
                       onTap: () {
                         Get.toNamed(AppRoute.orders);
                       }),
                   SettingMenuTile(
-                      title: "My Addresses",
-                      subTitle: "add new address here",
+                      title: TTexts.addresses,
+                      subTitle: TTexts.addressesSubtitle,
                       leadingIcon: Iconsax.location,
                       onTap: () {
                         Get.toNamed(AppRoute.address);
                       }),
                   SettingMenuTile(
-                      title: "Upload Dummy Data",
-                      subTitle: "static data to quick test",
+                      title: TTexts.uploadDummyData,
+                      subTitle: TTexts.uploadDummyDataSubtitle,
                       leadingIcon: Iconsax.document_upload,
                       onTap: () {}),
                   const SizedBox(height: TSizes.spaceBtnItems),
-                  const SeactionHeading(title: "App Settings"),
+                  SeactionHeading(title: "${TTexts.settings} ${TTexts.app}"),
                   const SizedBox(height: TSizes.spaceBtnItems),
                   SettingMenuTile(
-                    title: "App Language",
-                    subTitle: "change language",
+                    title: TTexts.language,
+                    subTitle: TTexts.languageSubtitle,
                     leadingIcon: Iconsax.language_square,
                     onTap: () {
                       showDialog(
@@ -96,7 +97,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                Text('Change Language',
+                                Text(TTexts.languageSubtitle,
                                     style: Theme.of(context)
                                         .textTheme
                                         .headlineSmall!),
@@ -110,7 +111,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                           : TColors.black,
                                   child: GestureDetector(
                                     child: Text(
-                                      'Arabic',
+                                      TTexts.arabic,
                                       style: Theme.of(context)
                                           .textTheme
                                           .headlineSmall!
@@ -136,7 +137,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                   padding: EdgeInsets.all(TSizes.sm),
                                   child: GestureDetector(
                                     child: Text(
-                                      'English',
+                                      TTexts.english,
                                       style: Theme.of(context)
                                           .textTheme
                                           .headlineSmall!
@@ -179,8 +180,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     ),
                   ),
                   SettingMenuTile(
-                    title: "App Theme",
-                    subTitle: "change theme",
+                    title: TTexts.theme,
+                    subTitle: TTexts.themeSubtitle,
                     leadingIcon: Iconsax.edit,
                     trailing: RoundedContainer(
                       backgroundColor: THelperFunctions.isDarkMode(context)
@@ -203,22 +204,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           : Get.changeThemeMode(ThemeMode.dark);
                     },
                   ),
-                  // SettingMenuTile(
-                  //   title: "App Color",
-                  //   subTitle: "change color",
-                  //   leadingIcon: Iconsax.colorfilter,
-                  //   onTap: () {
-                  //     // controller.updateColor(Colors.pink);
-                  //   },
-                  //   trailing: RoundedContainer(
-                  //     width: 50,
-                  //     height: 40,
-                  //     backgroundColor: TColors.getPrimaryColor(context),
-                  //   ),
-                  // ),
+
                   SettingMenuTile(
-                    title: "Notifications",
-                    subTitle: "turn on/off notifications",
+                    title: TTexts.notifications,
+                    subTitle: TTexts.notificationsSubtitle,
                     leadingIcon: Iconsax.notification,
                     trailing: Switch(
                       value: switchTurn!,

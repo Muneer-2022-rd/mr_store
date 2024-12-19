@@ -2,6 +2,7 @@ import 'package:mr_store/common/widgets/rounded_container.dart';
 import 'package:mr_store/common/widgets/seaction_heading.dart';
 import 'package:mr_store/core/constants/colors.dart';
 import 'package:mr_store/core/constants/sizes.dart';
+import 'package:mr_store/core/constants/texts.dart';
 import 'package:mr_store/core/helpers/helper_functions.dart';
 import 'package:mr_store/features/shop/screens/home/widgets/product_price_text.dart';
 import 'package:mr_store/features/shop/screens/home/widgets/product_title_text.dart';
@@ -56,8 +57,8 @@ class ProductAttributes extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  const SeactionHeading(
-                    title: 'Variation',
+                  SeactionHeading(
+                    title: TTexts.variation,
                     showActionButton: false,
                   ),
                   const SizedBox(width: TSizes.spaceBtnItems),
@@ -66,8 +67,8 @@ class ProductAttributes extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          const ProductTitleText(
-                              title: 'Price :', smallSize: true),
+                          ProductTitleText(
+                              title: '${TTexts.price} :', smallSize: true),
                           const SizedBox(width: TSizes.spaceBtnItems / 2),
                           Text(
                             '\$25',
@@ -82,10 +83,10 @@ class ProductAttributes extends StatelessWidget {
                       ),
                       Row(
                         children: [
-                          const ProductTitleText(
-                              title: 'Stock', smallSize: true),
+                          ProductTitleText(
+                              title: "${TTexts.status} :", smallSize: true),
                           const SizedBox(width: TSizes.spaceBtnItems / 2),
-                          Text('In Stock',
+                          Text(TTexts.inStock,
                               style: Theme.of(context).textTheme.titleMedium!)
                         ],
                       )
@@ -105,7 +106,7 @@ class ProductAttributes extends StatelessWidget {
         const SizedBox(height: TSizes.spaceBtnItems),
         Column(
           children: <Widget>[
-            const SeactionHeading(title: 'Colors'),
+            SeactionHeading(title: TTexts.colors),
             const SizedBox(height: TSizes.spaceBtnItems / 2),
             Wrap(
               spacing: 4,
@@ -123,7 +124,7 @@ class ProductAttributes extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            const SeactionHeading(title: 'Sizes'),
+            SeactionHeading(title: TTexts.sizes),
             const SizedBox(height: TSizes.spaceBtnItems / 2),
             Wrap(
               spacing: 8,

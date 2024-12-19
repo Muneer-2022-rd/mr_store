@@ -3,6 +3,7 @@ import 'package:mr_store/common/widgets/seaction_heading.dart';
 import 'package:mr_store/core/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:mr_store/core/constants/texts.dart';
 
 class BillingAddressSection extends StatelessWidget {
   const BillingAddressSection({super.key});
@@ -13,8 +14,8 @@ class BillingAddressSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SeactionHeading(
-          title: 'Shipping Address',
-          buttonTitle: 'Change',
+          title: TTexts.shippingAddress,
+          buttonTitle: TTexts.change,
           onPressed: () {
             showBottomSheet(
               context: context,

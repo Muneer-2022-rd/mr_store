@@ -4,6 +4,7 @@ import 'package:mr_store/common/widgets/circular_icon.dart';
 import 'package:mr_store/common/widgets/custom_app_bar.dart';
 import 'package:mr_store/common/widgets/custom_grid_layout.dart';
 import 'package:mr_store/core/constants/sizes.dart';
+import 'package:mr_store/core/constants/texts.dart';
 import 'package:mr_store/features/shop/screens/home/widgets/product_card_vertical.dart';
 
 class FavoriteScreen extends StatelessWidget {
@@ -14,10 +15,10 @@ class FavoriteScreen extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(
         title: Text(
-          "Wishlist",
+          TTexts.wishlist,
           style: Theme.of(context).textTheme.headlineMedium,
         ),
-        actions: [CircularIcon(onPressed: () {}, icon: Iconsax.add)],
+        actions: [CircularIcon(onPressed: () {}, icon: Iconsax.add),],
       ),
       body: SingleChildScrollView(
         child: Padding(

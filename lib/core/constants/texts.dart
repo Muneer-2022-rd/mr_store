@@ -44,6 +44,7 @@ class TTexts {
   static String successTitle = "success_title".tr;
   static String successSubtitle = "success_subtitle".tr;
   static String successContinue = "success_continue".tr;
+  static String successPayment = "success_payment".tr;
   // forget password
   static String forgetPasswordTitle = "forget_password_title".tr;
   static String forgetPasswordSubtitle = "forget_password_subtitle".tr;
@@ -71,4 +72,62 @@ class TTexts {
   static String storeElectronics = "store_electronics".tr;
   static String storeFurnitures = "store_furnitures".tr;
   static String storeCosmotics = "store_cosmotics".tr;
+  // product details
+  static String readMore = "read_more".tr;
+  static String readLess = "read_less".tr;
+  static String description = "description".tr;
+  static String checkout = "checkout".tr;
+  static String reviews = "reviews".tr;
+  static String addToCart = "add_to_cart".tr;
+  static String status = "status".tr;
+  static String inStock = "in_stock".tr;
+  static String outStock = "out_stock".tr;
+  static String variation = "variation".tr;
+  static String price = "price".tr;
+  static String colors = "colors".tr;
+  static String color = "color".tr;
+  static String sizes = "sizes".tr;
+  static String size = "size".tr;
+  // settings
+  static String account = "account".tr;
+  static String app = "app".tr;
+  static String settings = "settings".tr;
+  static String wishlistSubtitle = "wishlist_subtitle".tr;
+  static String orders = "orders".tr;
+  static String ordersSubtitle = "orders_subtitle".tr;
+  static String addresses = "addresses".tr;
+  static String addressesSubtitle = "addresses_subtitle".tr;
+  static String uploadDummyData = "upload_dummy_data".tr;
+  static String uploadDummyDataSubtitle = "upload_dummy_data_subtitle".tr;
+  static String language = "language".tr;
+  static String languageSubtitle = "language_subtitle".tr;
+  static String english = "english".tr;
+  static String arabic = "arabic".tr;
+  static String theme = "theme".tr;
+  static String themeSubtitle = "theme_subtitle".tr;
+  static String notifications = "notifications".tr;
+  static String notificationsSubtitle = "notifications_subtitle".tr;
+  static String colorSubtitle = "color_subtitle".tr;
+  // cart
+  static String cart = "cart".tr;
+  // order
+  static String orderProccessing = "order_proccessing".tr;
+  static String orderProccessingSubtitle = "order_proccessing_subtitle".tr;
+  static String order = "order".tr;
+  // brand
+  static String popular = "popular".tr;
+  static String brand = "brand".tr;
+  static String brands = "brands".tr;
+  static String products = "products".tr;
+  static String product = "product".tr;
+  // checkout
+ static String checkoutCoupon = "coupon".tr;
+ static String apply = "apply".tr;
+ static String subtotal = "subtotal".tr;
+ static String shippingFee = "shipping_fee".tr;
+ static String tax = "tax".tr;
+ static String total = "total".tr;
+ static String method = "method".tr;
+ static String change = "change".tr;
+ static String shippingAddress = "shipping_address".tr;
 }

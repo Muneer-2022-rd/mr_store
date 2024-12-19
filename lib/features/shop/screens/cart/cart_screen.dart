@@ -1,6 +1,7 @@
 import 'package:mr_store/common/widgets/custom_app_bar.dart';
 import 'package:mr_store/core/constants/routes.dart';
 import 'package:mr_store/core/constants/sizes.dart';
+import 'package:mr_store/core/constants/texts.dart';
 import 'package:mr_store/features/shop/screens/cart/widgets/cart_items.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -14,7 +15,7 @@ class CartScreen extends StatelessWidget {
       appBar: CustomAppBar(
         showBackArrow: true,
         title: Text(
-          "Cart",
+          TTexts.cart,
           style: Theme.of(context).textTheme.headlineMedium,
         ),
       ),
@@ -31,7 +32,7 @@ class CartScreen extends StatelessWidget {
             onPressed: () {
               Get.toNamed(AppRoute.checkout);
             },
-            child: const Text('Checkout \$750'),
+            child: Text('${TTexts.checkout} \$750'),
           ),
         ),
       ),

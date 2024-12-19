@@ -18,6 +18,7 @@ class ProductImageSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
+    final textDirection = Directionality.of(context);
     final List<String> imagesList = [
       TImages.productPink,
       TImages.productBlue,
@@ -54,7 +55,6 @@ class ProductImageSlider extends StatelessWidget {
                     border: Border.all(color: TColors.getPrimaryColor(context)),
                     backgroundColor: dark ? TColors.darkerGrey : TColors.light,
                     fit: BoxFit.contain,
-                    
                   ),
                 ),
                 itemCount: imagesList.length,
@@ -64,7 +64,9 @@ class ProductImageSlider extends StatelessWidget {
           ),
           CustomAppBar(
             leadingIcon: CircularIcon(
-              icon: Iconsax.arrow_left_2,
+              icon: textDirection == TextDirection.rtl
+                  ? Iconsax.arrow_right_3
+                  : Iconsax.arrow_left_2,
               color: dark ? TColors.white : TColors.black,
             ),
             leadingOnPressed: () => Get.back(),

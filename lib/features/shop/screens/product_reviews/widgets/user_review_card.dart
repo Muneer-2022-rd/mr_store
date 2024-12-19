@@ -2,6 +2,7 @@ import 'package:mr_store/common/widgets/rounded_container.dart';
 import 'package:mr_store/core/constants/colors.dart';
 import 'package:mr_store/core/constants/image.dart';
 import 'package:mr_store/core/constants/sizes.dart';
+import 'package:mr_store/core/constants/texts.dart';
 import 'package:mr_store/core/helpers/helper_functions.dart';
 import 'package:mr_store/features/shop/screens/product_reviews/widgets/rating_bar_indicator.dart';
 import 'package:flutter/material.dart';
@@ -40,13 +41,13 @@ class UserReviewCard extends StatelessWidget {
           ],
         ),
         const SizedBox(height: TSizes.spaceBtnItems),
-         ReadMoreText(
+        ReadMoreText(
           'This premium T-shirt is crafted from 100% organic cotton, ensuring maximum comfort and durability. Perfect for casual outings, it features a sleek design with a modern fit. The breathable fabric keeps you cool and comfortable all day long. Available in multiple colors to match your style. Ideal for everyday wear or gifting!',
           trimLines: 2,
           colorClickableText: TColors.getPrimaryColor(context),
           trimMode: TrimMode.Line,
-          trimCollapsedText: 'Read more',
-          trimExpandedText: 'Show less',
+          trimCollapsedText: TTexts.readMore,
+          trimExpandedText: TTexts.readLess,
           style: TextStyle(fontSize: 16),
         ),
         const SizedBox(height: TSizes.spaceBtnItems),
@@ -66,13 +67,13 @@ class UserReviewCard extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: TSizes.spaceBtnItems),
-                 ReadMoreText(
+                ReadMoreText(
                   'Available in multiple colors to match your style. Ideal for everyday wear or gifting!',
                   trimLines: 1,
                   colorClickableText: TColors.getPrimaryColor(context),
                   trimMode: TrimMode.Line,
-                  trimCollapsedText: 'Read more',
-                  trimExpandedText: 'Show less',
+                  trimCollapsedText: TTexts.readMore,
+                  trimExpandedText: TTexts.readLess,
                   style: TextStyle(fontSize: 16),
                 )
               ],

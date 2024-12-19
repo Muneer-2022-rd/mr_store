@@ -3,6 +3,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:mr_store/common/widgets/custom_app_bar.dart';
 import 'package:mr_store/common/widgets/custom_grid_layout.dart';
 import 'package:mr_store/core/constants/sizes.dart';
+import 'package:mr_store/core/constants/texts.dart';
 import 'package:mr_store/features/shop/screens/home/widgets/product_card_vertical.dart';
 
 class AllProductsScreen extends StatelessWidget {
@@ -14,7 +15,7 @@ class AllProductsScreen extends StatelessWidget {
       appBar: CustomAppBar(
         showBackArrow: true,
         title: Text(
-          "Popular Products",
+          "${TTexts.products} ${TTexts.popular}",
           style: Theme.of(context).textTheme.headlineMedium,
         ),
       ),

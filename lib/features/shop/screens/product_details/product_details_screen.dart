@@ -2,6 +2,7 @@ import 'package:mr_store/common/widgets/seaction_heading.dart';
 import 'package:mr_store/core/constants/colors.dart';
 import 'package:mr_store/core/constants/routes.dart';
 import 'package:mr_store/core/constants/sizes.dart';
+import 'package:mr_store/core/constants/texts.dart';
 import 'package:mr_store/core/helpers/helper_functions.dart';
 import 'package:mr_store/features/shop/screens/product_details/widgets/bottom_add_to_cart.dart';
 import 'package:mr_store/features/shop/screens/product_details/widgets/product_attributes.dart';
@@ -19,6 +20,7 @@ class ProductDetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
+    final textDirection = Directionality.of(context);
     return Scaffold(
       bottomNavigationBar: const BottomAddToCart(),
       body: SingleChildScrollView(
@@ -42,36 +44,38 @@ class ProductDetailsScreen extends StatelessWidget {
                     width: double.infinity,
                     child: ElevatedButton(
                       onPressed: () {},
-                      child: const Text('Checkout'),
+                      child: Text(TTexts.checkout),
                     ),
                   ),
                   const SizedBox(height: TSizes.spaceBtnSections),
-                  const SeactionHeading(
-                    title: 'Description',
+                  SeactionHeading(
+                    title: TTexts.description,
                     showActionButton: false,
                   ),
                   const SizedBox(height: TSizes.spaceBtnItems),
                   ReadMoreText(
-                    'This premium T-shirt is crafted from 100% organic cotton, ensuring maximum comfort and durability. Perfect for casual outings, it features a sleek design with a modern fit. The breathable fabric keeps you cool and comfortable all day long. Available in multiple colors to match your style. Ideal for everyday wear or gifting!',
+                    'This premium T-shirt is crafted from 100% organic cotton, ensuring maximum comfort and durability. Perfect for casual outings, it features a sleek design with a modern fit. The breathable fabric keeps you cool and comfortable all day long. Available in multiple colors to match your style. Ideal for everyday wear or gifting! ',
                     trimLines: 2,
                     colorClickableText: TColors.getPrimaryColor(context),
                     trimMode: TrimMode.Line,
-                    trimCollapsedText: 'Read more',
-                    trimExpandedText: 'Show less',
+                    trimCollapsedText: TTexts.readMore,
+                    trimExpandedText: TTexts.readLess,
                     style: TextStyle(fontSize: 16),
                   ),
                   const Divider(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const SeactionHeading(
-                        title: 'Reviews (199)',
+                      SeactionHeading(
+                        title: '${TTexts.reviews} (199)',
                         showActionButton: false,
                       ),
                       IconButton(
                         onPressed: () => Get.toNamed(AppRoute.productReviews),
                         icon: Icon(
-                          Iconsax.arrow_right_3,
+                          textDirection == TextDirection.rtl
+                              ? Iconsax.arrow_left_2
+                              : Iconsax.arrow_right_3,
                           size: 18,
                           color: dark ? TColors.white : TColors.black,
                         ),

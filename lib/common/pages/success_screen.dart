@@ -1,5 +1,6 @@
 import 'package:mr_store/common/styles/spacing_style.dart';
 import 'package:mr_store/core/constants/sizes.dart';
+import 'package:mr_store/core/constants/texts.dart';
 import 'package:mr_store/core/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
@@ -43,7 +44,7 @@ class SuccessScreen extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: onPressed,
-                  child: const Text('Continue'),
+                  child: Text(TTexts.successContinue),
                 ),
               )
             ],

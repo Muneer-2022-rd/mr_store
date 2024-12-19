@@ -5,6 +5,7 @@ import 'package:mr_store/core/constants/colors.dart';
 import 'package:mr_store/core/constants/image.dart';
 import 'package:mr_store/core/constants/routes.dart';
 import 'package:mr_store/core/constants/sizes.dart';
+import 'package:mr_store/core/constants/texts.dart';
 import 'package:mr_store/core/helpers/helper_functions.dart';
 import 'package:mr_store/features/shop/screens/cart/widgets/cart_items.dart';
 import 'package:mr_store/features/shop/screens/checkout/widgets/billing_address_section.dart';
@@ -24,7 +25,7 @@ class CheckoutScreen extends StatelessWidget {
       appBar: CustomAppBar(
         showBackArrow: true,
         title: Text(
-          "Order Review",
+          "${TTexts.reviews} ${TTexts.order}",
           style: Theme.of(context).textTheme.headlineMedium,
         ),
       ),
@@ -64,15 +65,15 @@ class CheckoutScreen extends StatelessWidget {
             Get.to(
               () => SuccessScreen(
                 image: TImages.success,
-                title: 'Payment Success!',
-                subtitle: 'Order Being Prepered',
+                title: TTexts.successPayment,
+                subtitle: TTexts.orderProccessingSubtitle,
                 onPressed: () {
                   Get.toNamed(AppRoute.navigationMenu);
                 },
               ),
             );
           },
-          child: const Text('Checkout \$750'),
+          child: Text('${TTexts.checkout} \$750'),
         ),
       ),
     );

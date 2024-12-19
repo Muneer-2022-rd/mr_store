@@ -9,7 +9,6 @@ class TChipTheme {
     labelStyle: const TextStyle(color: TColors.black),
     padding: const EdgeInsets.all(12.0),
     checkmarkColor: TColors.white,
-    // color: const WidgetStatePropertyAll(Colors.transparent)
   );
   static ChipThemeData darkChipTheme = ChipThemeData(
     selectedColor: TColors.primaryDark,
@@ -17,6 +16,5 @@ class TChipTheme {
     labelStyle: TextStyle(color: TColors.white),
     padding: EdgeInsets.all(12.0),
     checkmarkColor: TColors.white,
-    // color: WidgetStatePropertyAll(Colors.transparent)
   );
 }

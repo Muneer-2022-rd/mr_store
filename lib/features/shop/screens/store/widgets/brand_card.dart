@@ -3,6 +3,7 @@ import 'package:mr_store/common/widgets/rounded_container.dart';
 import 'package:mr_store/core/constants/enum.dart';
 import 'package:mr_store/core/constants/image.dart';
 import 'package:mr_store/core/constants/sizes.dart';
+import 'package:mr_store/core/constants/texts.dart';
 import 'package:mr_store/features/shop/screens/store/widgets/brand_tile_with_verified_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -45,7 +46,7 @@ class BrandCard extends StatelessWidget {
                     barndTextSizes: TextSizes.large,
                   ),
                   Text(
-                    '256 products',
+                    '256 ${TTexts.products}',
                     style: Theme.of(context).textTheme.labelMedium,
                     overflow: TextOverflow.ellipsis,
                   )

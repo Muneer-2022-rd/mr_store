@@ -1,6 +1,7 @@
 import 'package:mr_store/common/widgets/rounded_container.dart';
 import 'package:mr_store/core/constants/colors.dart';
 import 'package:mr_store/core/constants/sizes.dart';
+import 'package:mr_store/core/constants/texts.dart';
 import 'package:mr_store/core/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
@@ -27,8 +28,8 @@ class CopunCode extends StatelessWidget {
           Flexible(
             child: TextFormField(
               controller: promoCodeC,
-              decoration: const InputDecoration(
-                hintText: 'Have a promo code ? Enter Here',
+              decoration: InputDecoration(
+                hintText: TTexts.checkoutCoupon,
                 border: InputBorder.none,
                 disabledBorder: InputBorder.none,
                 enabledBorder: InputBorder.none,
@@ -51,8 +52,8 @@ class CopunCode extends StatelessWidget {
                   ? TColors.white.withValues(alpha: 0.5)
                   : TColors.dark.withValues(alpha: 0.5),
             ),
-            child:
-                Text('Apply', style: Theme.of(context).textTheme.labelMedium),
+            child: Text(TTexts.apply,
+                style: Theme.of(context).textTheme.labelMedium),
           ),
         ],
       ),

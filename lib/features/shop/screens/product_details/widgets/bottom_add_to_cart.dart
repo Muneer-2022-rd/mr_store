@@ -1,6 +1,7 @@
 import 'package:mr_store/common/widgets/circular_icon.dart';
 import 'package:mr_store/core/constants/colors.dart';
 import 'package:mr_store/core/constants/sizes.dart';
+import 'package:mr_store/core/constants/texts.dart';
 import 'package:mr_store/core/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -54,7 +55,7 @@ class BottomAddToCart extends StatelessWidget {
               backgroundColor: TColors.black,
               side: const BorderSide(color: TColors.black),
             ),
-            child: const Text('Add To Cart'),
+            child: Text(TTexts.addToCart),
           ),
         ],
       ),

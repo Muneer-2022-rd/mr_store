@@ -1,5 +1,6 @@
 import 'package:mr_store/core/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:mr_store/core/constants/texts.dart';
 
 class BillingAmountSection extends StatelessWidget {
   const BillingAmountSection({super.key});
@@ -12,7 +13,7 @@ class BillingAmountSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              "Subtotal",
+              TTexts.subtotal,
               style: Theme.of(context).textTheme.bodyMedium,
             ),
             Text(
@@ -26,7 +27,7 @@ class BillingAmountSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              "Shipping Fee",
+              TTexts.shippingFee,
               style: Theme.of(context).textTheme.bodyMedium,
             ),
             Text(
@@ -40,7 +41,7 @@ class BillingAmountSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              "Tax",
+              TTexts.tax,
               style: Theme.of(context).textTheme.bodyMedium,
             ),
             Text(
@@ -54,7 +55,7 @@ class BillingAmountSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              "Order Total",
+              "${TTexts.total} ${TTexts.order}",
               style: Theme.of(context).textTheme.bodyMedium,
             ),
             Text(

@@ -3,6 +3,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:mr_store/common/widgets/rounded_container.dart';
 import 'package:mr_store/core/constants/colors.dart';
 import 'package:mr_store/core/constants/sizes.dart';
+import 'package:mr_store/core/constants/texts.dart';
 import 'package:mr_store/core/helpers/helper_functions.dart';
 
 class OrderCard extends StatelessWidget {
@@ -31,7 +32,7 @@ class OrderCard extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      'Proccessing',
+                      TTexts.orderProccessing,
                       style: Theme.of(context).textTheme.bodyLarge!.apply(
                           color: TColors.getPrimaryColor(context),
                           fontWeightDelta: 1),
@@ -67,7 +68,7 @@ class OrderCard extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text('Order',
+                          Text(TTexts.order,
                               style: Theme.of(context).textTheme.labelMedium),
                           Text(
                             '[#34534]',

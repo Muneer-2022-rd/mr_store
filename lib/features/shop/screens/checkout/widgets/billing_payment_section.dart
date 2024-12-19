@@ -3,6 +3,7 @@ import 'package:mr_store/common/widgets/seaction_heading.dart';
 import 'package:mr_store/core/constants/colors.dart';
 import 'package:mr_store/core/constants/image.dart';
 import 'package:mr_store/core/constants/sizes.dart';
+import 'package:mr_store/core/constants/texts.dart';
 import 'package:mr_store/core/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -16,8 +17,8 @@ class BillingPaymentSection extends StatelessWidget {
     return Column(
       children: [
         SeactionHeading(
-          title: 'Payment Method',
-          buttonTitle: 'Change',
+          title: TTexts.method,
+          buttonTitle: TTexts.change,
           onPressed: () {
             showBottomSheet(
               context: context,

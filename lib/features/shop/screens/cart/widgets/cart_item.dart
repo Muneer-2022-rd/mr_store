@@ -24,7 +24,6 @@ class CartItem extends StatelessWidget {
           height: 60,
           padding: const EdgeInsets.all(TSizes.sm),
           backgroundColor: dark ? TColors.darkerGrey : TColors.light,
-          
         ),
         const SizedBox(width: TSizes.spaceBtnItems),
         Column(
@@ -42,7 +41,7 @@ class CartItem extends StatelessWidget {
               TextSpan(
                 children: [
                   TextSpan(
-                      text: 'Color',
+                      text: TTexts.color,
                       style: Theme.of(context).textTheme.bodySmall),
                   const WidgetSpan(
                     child: SizedBox(width: TSizes.spaceBtnItems / 2),
@@ -54,7 +53,7 @@ class CartItem extends StatelessWidget {
                     child: SizedBox(width: TSizes.spaceBtnItems / 2),
                   ),
                   TextSpan(
-                      text: 'Size',
+                      text: TTexts.size,
                       style: Theme.of(context).textTheme.bodySmall),
                   const WidgetSpan(
                     child: SizedBox(width: TSizes.spaceBtnItems / 2),
